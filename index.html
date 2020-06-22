@@ -243,7 +243,7 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p class="contacts-content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <p class="contacts-content"><img></p>        
+        <a class="contacts-content"><img></a>        
         <a href="blank.html">Напишите нам</a>
       </section>
     </main>
@@ -297,8 +297,14 @@
 
   </body>
   <section class="write-us">
-    <form>
-
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <label class="label-write" for="name">Ваше имя:</label>
+      <input class="input-write" type="text" id="name" placeholder="Имя Фамилия">
+      <label class="label-write" for="e-mail">Ваше имя:</label>
+      <input class="input-write" type="text" id="e-mail" placeholder="email@example.com">
+      <label class="label-write" for="mail-content">Текст письма:</label>
+      <textarea class="textarea-write" type="text" id="mail-content" placeholder="В свободной форме" rows="8"></textarea>
+      <button type="submit">Отправить</button>
     </form>
   </section>
 </html>
