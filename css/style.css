@@ -1,0 +1,353 @@
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*====Global====*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;  
+}
+
+img {
+  max-width: 100%;  
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/*==========index.html==========*/
+
+/*====header====*/
+
+.search {
+  line-height: 20px;
+}
+
+.additional-navigation {
+  line-height: 20px;
+}
+
+.navigation-item {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.catalog-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+/*====promo====*/
+
+.tagline {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;  
+}
+
+.number {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 179px;
+  line-height: 219px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.promo-content {
+  line-height: 20px;
+}
+
+.promo-box {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.parameters-items dl {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.parameters-items dt {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.best-item h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+/*====best====*/
+
+.services-item {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.services-content {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.services-content h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+/*====producers====*/
+
+/*====info====*/
+
+.info h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.info a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.transport-item {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 800;  
+}
+
+/*====contacts====*/
+
+.contacts h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.contacts a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+/*====footer====*/
+
+address {
+  font-style: normal;
+  line-height: 20px;
+}
+
+/*====write-us====*/
+
+.write-us label {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.write-us input {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.write-us button {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+/*==========catalog.html==========*/
+
+.catalog-h1 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;  
+}
+
+/*====search====*/
+
+.search h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.search .btn {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filter-item legend {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 800;
+  letter-spacing: 0.1em
+}
+
+.price-center {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;  
+}
+
+.color-item,
+.bluetooth-item {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/*====sorting-rating====*/
+
+.sorting-rating h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sorting-option {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/*====results====*/
+
+.results h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.results .price {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.hover-box {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+
+.hover-box .btn {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/*====pages====*/
+
+.pages {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -62,7 +64,7 @@
           <li class="promo-item">
             <article class="selfie-stick">
               <h3 class="visually-hidden">Селфи-палка</h3>
-              <img src="img/slider-1 1.png" width="384" height="486">
+              <img src="img/slider-1 1.png" width="384" height="486" alt="Селфи-палка">
               <p class="tagline">
                 Делай селфи, как Бен Стиллер!
               </p>
@@ -93,7 +95,7 @@
           <li class="promo-item">
             <article class="smart-band">
               <h3 class="visually-hidden">Фитнес-браслет</h3>
-              <img src="img/slider-2 1.png" width="345" height="485">
+              <img src="img/slider-2 1.png" width="345" height="485" alt="Фитнес-браслет">
               <p class="tagline">
                 Худеем правильно! 
               </p>
@@ -120,7 +122,7 @@
           <li class="promo-item">
             <article class="quadcopter">
               <h3 class="visually-hidden">Квадрокоптер</h3>
-              <img src="img/slider-3 1.png" width="526" height="334">
+              <img src="img/slider-3 1.png" width="526" height="334" alt="Квадрокоптер">
               <p class="tagline">
                 Порхает как бабочка, жалит как пчела! 
               </p>
@@ -227,16 +229,16 @@
         <h2 class="visually-hidden">Производители</h2>
         <ul class="producers-items">
           <li class="producers-item">
-            <img src="img/logo-1 1.png" width="260" height="100">
+            <img src="img/logo-1 1.png" width="260" height="100" alt="DJI">
           </li>
           <li class="producers-item">
-            <img src="img/logo-2 1.png" width="260" height="100">
+            <img src="img/logo-2 1.png" width="260" height="100" alt="SP Gadgets">
           </li>
           <li class="producers-item">
-            <img src="img/logo-3 1.png" width="260" height="100">
+            <img src="img/logo-3 1.png" width="260" height="100" alt="GoPro">
           </li>
           <li class="producers-item">
-            <img src="img/logo-4 1.png" width="260" height="100">
+            <img src="img/logo-4 1.png" width="260" height="100" alt="Vive">
           </li>
         </ul>
       </section>
@@ -255,7 +257,7 @@
         <h2>Контакты</h2>
         <p class="contacts-content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a class="contacts-content">
-          <img src="img/map 1.png" width="560" height="222">
+          <img src="img/map 1.png" width="560" height="222" alt="Карта">
         </a>        
         <a href="blank.html">Напишите нам</a>
       </section>
@@ -312,9 +314,9 @@
   <section class="write-us">
     <form action="https://echo.htmlacademy.ru" method="POST">
       <label class="label-write" for="name">Ваше имя:</label>
-      <input class="input-write" type="text" id="name" placeholder="Имя Фамилия">
-      <label class="label-write" for="e-mail">Ваше имя:</label>
-      <input class="input-write" type="text" id="e-mail" placeholder="email@example.com">
+      <input class="input-write" type="text" id="name" aria-label="Впишите ваше име" placeholder="Имя Фамилия">
+      <label class="label-write" for="e-mail">Ваш e-mail:</label>
+      <input class="input-write" type="text" id="e-mail" aria-label="Впишите вашу электронную почту" placeholder="email@example.com">
       <label class="label-write" for="mail-content">Текст письма:</label>
       <textarea class="textarea-write" type="text" id="mail-content" placeholder="В свободной форме" rows="8"></textarea>
       <button type="submit">Отправить</button>
