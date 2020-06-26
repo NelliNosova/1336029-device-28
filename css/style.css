@@ -86,7 +86,7 @@ header {
   background-color: #F7E296;  
 }
 
-.logo {
+header .logo {
   position: absolute;
   margin-left: 60px;
   margin-top: -20px;  
@@ -111,7 +111,7 @@ header {
   line-height: 20px;  
 }
 
-.additional-navigation {
+header .additional-navigation {
   display: flex;  
   width: 500px;
   line-height: 20px;
@@ -121,11 +121,11 @@ header {
   margin-left: 25px;
 }
 
-.compare {
+header .compare {
   margin-left: auto;
 }
 
-.basket {
+header  .basket {
   margin-left: 65px;
 }
 
@@ -136,7 +136,7 @@ header {
   padding: 0;
 }
 
-.navigation-item {
+header .navigation-item {
   margin-top: 50px;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
@@ -201,15 +201,15 @@ header {
   outline-offset: -5px; */
 }
 
-.navigation-ls {
+header .navigation-ls {
   letter-spacing: 0.2em;
 }
 
-.navigation-guarantee {
+header .navigation-guarantee {
   margin-left: 36px;
 }
 
-.navigation-contacts {
+header .navigation-contacts {
   margin-left: auto;
 }
 
@@ -509,9 +509,22 @@ header {
   margin-right: auto;
 }
 
-/*====info====*/
+/*====box-info-contacts====*/
 
-.info h2 {
+.box-info-contacts {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 1160px;
+  margin: auto;
+  padding-top: 101px;
+}
+
+.box-info-contacts h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 39px;
+  padding-bottom: 40px;
   font-family: 'Gilroy', sans-serif;
   font-size: 47px;
   line-height: 58px;
@@ -519,44 +532,127 @@ header {
   letter-spacing: 0.2em;
 }
 
-.info a {
+.box-info-contacts .content {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.box-info-contacts .btn {
+  display: inline-block;
+  margin-top: 71px;
+  padding: 5px 25px;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
-.transport-item {
+/*====info====*/
+
+.info {
+  padding-right: 105px;
+}
+
+.transport-items {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 32px;
+  list-style: none;
+}
+
+.transport-item {    
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 800;  
+  font-weight: 800;   
 }
+
+.transport-item:not(:last-child) {  
+  padding-bottom: 15px;
+} 
 
 /*====contacts====*/
 
-.contacts h2 {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 47px;
-  line-height: 58px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-}
-
-.contacts a {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
+.contacts .btn {
+  padding: 5px 40px;
 }
 
 /*====footer====*/
 
+footer {
+  display: grid;
+  grid-template-areas: 
+   "fl . anf"
+   "ad fn cp"
+   ". soc cr";
+   grid-template-columns: 352px 460px 1fr;
+  margin-top: 84px;
+  padding: 40px 140px;
+}
+
+footer .logo {
+  grid-area: fl;
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
+.additional-navigation-footer {
+  grid-area: anf;
+  display: flex;
+  justify-content: space-between;  
+  padding-left: 22px;
+}
+
 address {
+  grid-area: ad;
+  margin-top: 7px;
   font-style: normal;
   line-height: 20px;
+}
+
+.footer-navigation {
+  grid-area: fn;
+  margin-top: 6px;
+}
+
+.footer-navigation .navigation-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; 
+}
+
+.contacts-phone {
+  grid-area: cp;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  text-align: end;
+}
+
+.contacts-phone .phone{
+  margin-left: 4px;
+}
+
+.social {
+  grid-area: soc;
+  display: flex;
+  list-style: none;
+}
+
+.copyright {
+  grid-area: cr;
 }
 
 /*====write-us====*/
