@@ -927,14 +927,35 @@ address {
 }
 
 .results h3 {
-  font-family: 'Gilroy', sans-serif;
+  display: inline-block;
+  margin: 0;  
+  padding: 31px 80px 31px 0;  
+  font-family: 'Gilroy', "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
   letter-spacing: 0.05em;
 }
 
+.results-items {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 40px;
+  row-gap: 18px;
+  margin: 0;
+  padding: 62px 178px 60px 72px;  
+  list-style: none;
+}
+.title-box {
+  position: relative;
+}
+
 .results .price {
+  position: absolute;
+  width: 85px;
+  top: 32px;
+  right: -5px;
+  text-align: center;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -942,10 +963,45 @@ address {
   letter-spacing: 0.05em;
 }
 
+.title-box-sm .price {
+  top: 33px;
+  right: 2px;
+}
+
+.title-box-ss .price {
+  top: 35px;
+  right: -2px;
+}
+
+.results-item img {
+  position: relative;
+  z-index: 10;
+}
+
 .hover-box {
+  position: relative;
+  z-index: -10;
+  box-sizing: border-box;
+  width: 300px;
+  height: 380px;
+  margin: auto;
+  margin-top: -388px;
+  padding-top: 180px;
   font-size: 13px;
   line-height: 18px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em;  
+}
+
+.hover-box .add,
+.hover-box .btn-box {
+  display: block;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.btn-box a {
+  box-sizing: border-box;
+  padding: 3px 37px;  
 }
 
 .hover-box .btn {
