@@ -117,7 +117,7 @@ header .additional-navigation {
   line-height: 20px;
 }
 
-.login {
+.additional-navigation .login {
   margin-left: 25px;
 }
 
@@ -508,6 +508,7 @@ header .navigation-contacts {
   gap: 20px;
   width: 1160px;
   margin: auto;
+  margin-bottom: 5px;
   padding-top: 101px;
 }
 
@@ -577,11 +578,11 @@ header .navigation-contacts {
 footer {
   display: grid;
   grid-template-areas: 
-   "fl . anf"
+   "fl anf anf"
    "ad fn cp"
    ". soc cr";
    grid-template-columns: 352px 460px 1fr;
-  margin-top: 84px;
+  margin-top: 79px;
   padding: 40px 140px;
 }
 
@@ -594,8 +595,12 @@ footer .logo {
 .additional-navigation-footer {
   grid-area: anf;
   display: flex;
-  justify-content: space-between;  
+  justify-content: flex-end;  
   padding-left: 22px;
+}
+
+.additional-navigation-footer a {
+  margin-left: 65px;
 }
 
 address {
@@ -725,7 +730,7 @@ address {
 
 /*====user-navigation-login====*/
 
-.login-in {
+header .login-in {
   margin-left: 24px;
   margin-right: 22px;
 }
@@ -943,7 +948,7 @@ address {
   column-gap: 40px;
   row-gap: 18px;
   margin: 0;
-  padding: 62px 178px 60px 72px;  
+  padding: 62px 178px 8px 72px;  
   list-style: none;
 }
 .title-box {
@@ -1017,13 +1022,43 @@ address {
 
 .pages {
   grid-area: p;
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  margin-left: 73px;
+  margin-right: auto;
+/*   background-color: blue; */
 }
 
-.pages {
+.back-forward {
+  display: inline-block;
+  padding: 24px 30px;
+}
+
+.pages {  
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.pages-items {
+  display: flex;
+  justify-content: space-between;  
+  margin: 0;
+  margin-left: 4px;  
+  padding: 0;
+  list-style: none;
+}
+
+.pages-item {
+  padding: 23px 15px;
+}
+
+/*====footer-login====*/
+
+.footer-login {
+  
 }
