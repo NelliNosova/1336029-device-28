@@ -87,12 +87,6 @@ a {
   var(--basic-white) 63% 
   );
  
-  /* to top, 
-  var(--basic-white) 33%, 
-  var(--special-yellow-light) 33%,
-  var(--special-yellow-light) 66%,
-  var(--basic-white) 66%, 
-   */);
 }
 
 /*====Grid====*/
@@ -329,8 +323,6 @@ header .navigation-contacts {
   font-size: 47px;
   line-height: 58px;
   font-weight: 800;  
-/*   outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px; */
 }
 
 .number {
@@ -390,12 +382,27 @@ header .navigation-contacts {
 
 .promo-sliders {
   display: flex;
+  margin-left: auto;
+  margin-right: 28px;
+  list-style: none;
 }
 
-.promo-slider {
+.promo-slider {  
   width: 12px;
   height: 12px;
-  border: 2px solid var(--basic-black)
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 18px;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
+}
+
+.promo-slider-active {
+  box-shadow: 
+    inset 0 0 0 2px var(--basic-white),
+    inset 0 0 0 3px var(--basic-black);
+  
 }
 
 .promo-box .btn {
@@ -493,7 +500,7 @@ header .navigation-contacts {
 .best {
   width: 1160px;
   margin: auto;
-  padding-top: 113px;
+  padding-top: 114px;
 }
 
 .best-items {
@@ -504,7 +511,7 @@ header .navigation-contacts {
 }
 
 .best-item {
-  width: 160px;
+  width: 160px;  
 }
 
 .best-item:not(:last-child) {
@@ -518,7 +525,13 @@ header .navigation-contacts {
   width: 160px;
   height: 160px;
   margin-bottom: 39px;
-  
+  background-color: var(--special-yellow-light);
+}
+
+.svg-box-down {
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-top: 26px;
 }
 
 .best-item h3 {
@@ -563,8 +576,7 @@ header .navigation-contacts {
 
 .services-item a {
   display: block;
-  margin: auto;
-  vertical-align: middle;
+  margin: auto;  
   text-align: center;
 }
 
