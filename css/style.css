@@ -31,6 +31,23 @@
   font-style: normal;
 }
 
+/*====Variables====*/
+:root {
+  --basic-black: #000000;
+  --basic-black-transp: rgba(0, 0, 0, 0.3);
+  --basic-white: #ffffff;
+  --basic-white-transp: rgba(255, 255, 255, 0.3);
+  --basic-white-transp-max: rgba(255, 255, 255, 0.7);
+  --special-yellow-one: #F0C52E;
+  --special-yellow-two: #F0C42E;
+  --special-yellow-light: #F7E296;
+  --special-yellow-dark: #FFC600;
+  --basic-grey-light: #E5E5E5;
+  --basic-dark-light: #363636;
+  --basic-dark: #3A3A3A;
+  --basic-dark-dark: #231F20;
+}
+
 /*====Global====*/
 
 body {
@@ -61,6 +78,23 @@ a {
   white-space: nowrap;
 }
 
+.btn {
+  background-image: 
+  linear-gradient(
+  var(--basic-white) 37%,
+  var(--special-yellow-light) 37%,
+  var(--special-yellow-light) 63%,
+  var(--basic-white) 63% 
+  );
+ 
+  /* to top, 
+  var(--basic-white) 33%, 
+  var(--special-yellow-light) 33%,
+  var(--special-yellow-light) 66%,
+  var(--basic-white) 66%, 
+   */);
+}
+
 /*====Grid====*/
 
 .page {
@@ -84,6 +118,7 @@ header {
   margin: auto;
   margin-top: 40px;
   margin-bottom: -130px;
+  background-color: var(--special-yellow-light);
 }
 
 header .logo {
@@ -108,26 +143,68 @@ header .logo {
 .search {
   margin-right: auto;
   margin-left: 38px;
-  line-height: 20px;  
+  line-height: 20px; 
+  color: var(--basic-black-transp); 
+}
+
+.search::before {
+  content: " ";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 60px;
+  top: 47px;
+  background-image: url(../img/icon_search.svg);  
 }
 
 header .additional-navigation {
+  position: relative;
   display: flex;  
   width: 500px;
   line-height: 20px;
 }
 
 .additional-navigation .login {
+  position: relative;
   margin-left: 25px;
 }
 
+header .login::before {  
+  background-image: url(../img/icon_user.svg);
+}
+
 header .compare {
+  position: relative;
   margin-left: auto;
 }
 
+header .compare::before {  
+  background-image: url(../img/icon_chart.svg);
+}
+
 header  .basket {
+  position: relative;
   margin-left: 65px;
 }
+
+header .login::before,
+header .compare::before,
+header  .basket::before {
+  content: " ";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: -25px;
+  top: 5px;
+}
+
+header .basket::before {
+  width: 10px;
+  height: 10px;
+  left: -23px;  
+  background-image: url(../img/icon_cart.svg);
+}
+
 
 .navigation-items {
   display: flex;
@@ -147,6 +224,8 @@ header .navigation-item {
 }
 
 .catalog-items {
+  position: relative;
+  z-index: -10;
   display: grid;
   grid-template-columns: 240px 186px 1fr;
   grid-template-areas:
@@ -182,6 +261,23 @@ header .navigation-item {
 
 .ac {
   grid-area: ac;
+}
+
+.catalog-add {
+  position: relative;  
+}
+
+.catalog-add::after {
+  content: " ";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: -37px;  
+  background-image: url(../img/icon_plus.svg);
+}
+
+.navigation-catalog:hover .catalog-items {
+  z-index: 10;
 }
 
 .catalog-item {
@@ -239,6 +335,7 @@ header .navigation-contacts {
 
 .number {
   position: absolute;
+  z-index: -10;
   top: -18px;
   right: -13px;
   margin: 0;
@@ -248,6 +345,17 @@ header .navigation-contacts {
   line-height: 219px;
   font-weight: 800;
   text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.number::before {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  top: 53px;
+  left: -330px;
+  background-color: var(--basic-white);
 }
 
 .promo-img {  
@@ -256,7 +364,7 @@ header .navigation-contacts {
 
 .promo-content {  
   margin: 0;
-  width: 450px;
+  width: 472px;
   min-height: 90px;
   padding-top: 26px;
   padding-left: 20px;  
@@ -269,7 +377,8 @@ header .navigation-contacts {
   list-style: none;
 }
 
-.promo-box {    
+.promo-box {   
+  display: flex; 
   padding-top: 5px;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
@@ -279,12 +388,22 @@ header .navigation-contacts {
   text-transform: uppercase;
 }
 
+.promo-sliders {
+  display: flex;
+}
+
+.promo-slider {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--basic-black)
+}
+
 .promo-box .btn {
   display: inline-block;
   vertical-align: center;
   margin: 0;
   margin-left: 20px;  
-  padding: 5px 45px;
+  padding: 5px 39px 5px 45px;
 }
 
 .parameters-items {    
@@ -354,8 +473,19 @@ header .navigation-contacts {
 }
 
 .quadcopter .promo-img {
+  max-width: 526px;
   padding-top: 84px;
   margin-left: -30px;
+}
+
+.quadcopter .number {
+  right: -5px;
+  top: -15px;
+}
+
+.quadcopter .number::before {
+  top: 50px;
+  left: -300px;
 }
 
 /*====best====*/
