@@ -35,8 +35,9 @@
 :root {
   --basic-black: #000000;
   --basic-black-transp: rgba(0, 0, 0, 0.3);
+  --basic-black-transp-max: rgba(0, 0, 0, 0.8);
   --basic-black-transp-min: rgba(0, 0, 0, 0.6);
-  --basic-black-transp-max: rgba(0, 0, 0, 0.1);
+  --basic-black-transp-max: rgba(0, 0, 0, 0.1);  
   --basic-white: #ffffff;
   --basic-white-transp: rgba(255, 255, 255, 0.3);
   --basic-white-transp-max: rgba(255, 255, 255, 0.7);
@@ -57,6 +58,9 @@
   --page-background: #EBEBEB;
   --hover-background: #EAEAEA;
   --error: #F6DADA;
+  --box-shadow: rgba(0, 0, 0, 0.18);
+  --special-green: #91C92F;
+  --scale: rgba(0, 0, 0, 0.2);
 }
 
 /*====Global====*/
@@ -443,13 +447,13 @@ header .navigation-contacts {
   margin-left: 18px;
   border: 1px solid var(--basic-black);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .promo-slider-active {
   box-shadow: 
     inset 0 0 0 2px var(--basic-white),
-    inset 0 0 0 3px var(--basic-black);
-  
+    inset 0 0 0 3px var(--basic-black);   
 }
 
 .promo-box .btn {
@@ -1235,7 +1239,7 @@ header .logout {
 .filter {
   position: relative;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
   padding: 0;
   border: none;
 }
@@ -1259,7 +1263,7 @@ header .logout {
 
 .price-controls {
   display: flex;
-  margin-top: 56px;
+  margin-top: 57px;
 }
 
 .price-center {  
@@ -1279,6 +1283,7 @@ header .logout {
   line-height: 16px;
   font-weight: 300;
   border: none;
+  background-color: transparent;
 }
 
 .color-item,
@@ -1723,4 +1728,151 @@ footer a:active {
 
 .back-forward:active {
   color: var(--basic-black-transp);
+}
+
+
+/*===checkbox====*/
+
+.check-input,
+.radio-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+}
+
+.filter .check-input:focus,
+.filter .radio-input:focus {
+  outline: none;
+}
+
+.check {
+  position: relative;
+  margin-left: 17px;
+}
+
+.check-box::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  top: -3px;
+  left: -43px;
+  width: 24px;
+  height: 24px;  
+  border: 2px solid var(--basic-black);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.check-input:checked + .check-box::after {
+  content: "";
+  position: absolute;  
+  width: 5px;
+  height: 10px;
+  top: 2px;
+  left: -34px;
+  border: 2px solid var(--basic-black);
+  border-left: none;
+  border-top: none;    
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.check-radio::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  top: -3px;
+  left: -41px;
+  width: 24px;
+  height: 24px;  
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radio-input:checked + .check-radio::after {
+  content: "";
+  position: absolute;  
+  width: 8px;
+  height: 8px;
+  top: 5px;
+  left: -33px;
+  background-color: var(--basic-black);  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-item:hover .check-box::before,
+.color-item:hover .check-box::after,
+.bluetooth-item:hover .check-radio::before,
+.bluetooth-item:hover .check-radio::after {
+  opacity: 0.6;  
+}
+
+.color-item:focus .check-box::before,
+.color-item:focus .check-box::after,
+.bluetooth-item:focus .check-radio::before,
+.bluetooth-item:focus .check-radio::after {
+  opacity: 0.6;
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.check-input:checked:active + .check-box::after,
+.radio-input:checked:active + .check-radio::after {
+  display: none;
+}
+
+.check-input:disabled + .check-box::before,
+.check-input:disabled + .check-box::after,
+.radio-input:disabled + .check-radio::before,
+.radio-input:disabled + .check-radio::after {
+  opacity: 0.25;  
+}
+
+
+/*====range-filter====*/
+
+.range-filter {
+  position: relative;
+  width: 200px;  
+}
+
+.range-controls {
+  position: absolute;
+  top: -19px; 
+  
+}
+
+.scale {
+  height: 2px;
+  width: 200px;
+  background-color: var(--scale);
+}
+
+.bar {
+  width: 125px;
+  height: 2px;  
+  background-color: var(--special-green);
+  opacity: 1;
+}
+
+.toggle {
+  position: absolute;  
+  top: -8px;
+  width: 19px;
+  height: 25px;
+  padding: 0;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: top center;  
+  cursor: pointer;
+}
+
+.toggle:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.toggle-max {
+  left: 115px;
 }
