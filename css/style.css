@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff2") format("woff2"),
@@ -251,6 +250,10 @@ header .navigation-item {
   text-transform: uppercase;
 }
 
+header .navigation-item:nth-child(2) {
+  margin-left: 315px;
+}
+
 .catalog-items {
   position: relative;
   z-index: -10;
@@ -325,7 +328,7 @@ header .navigation-item {
 }
 
 .navigation-items .navigation-catalog {
-  width: 540px;
+  width: 225px;
   margin-left: 3px;
   letter-spacing: 0.1em;
 }
@@ -351,6 +354,7 @@ header .navigation-contacts {
   position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
+  min-height: 512px;
 }
 
 .tagline {
@@ -403,7 +407,7 @@ header .navigation-contacts {
   line-height: 20px;
 }
 
-.promo-items {
+.promo-items {  
   margin: 0;
   padding: 0;
   list-style: none;
@@ -422,6 +426,9 @@ header .navigation-contacts {
 }
 
 .promo-sliders {
+  position: absolute;
+  right: 0;
+  top: 317px;
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
@@ -528,7 +535,7 @@ header .navigation-contacts {
 .best {
   width: 1160px;
   margin: auto;
-  padding-top: 114px;
+  padding-top: 94px;
 }
 
 .best-items {
@@ -615,22 +622,39 @@ header .navigation-contacts {
 
 .services-item {
   padding-top: 39px;
-  font-family: "Gilroy", sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .services-item .btn {
   display: inline-block;
   width: 160px;
+  border: none;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
-.services-item-active {
+.services-item .services-active {
   position: relative;
+  z-index: 1;
+  background-image: none;
+  color: var(--special-yellow-light);
+  outline: none;
+}
+
+.services-active::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: -11px;
+  left: 0;
+  width: 277px;
+  height: 40px;
+  background-color: var(--basic-black);
 }
 
 .services-contents {
@@ -1047,7 +1071,20 @@ address::after {
   background-color: var(--input-grey);
 }
 
-.write-us button {
+.write-us .btn {
+  margin: 0;
+  margin-top: 45px;
+  padding: 0;
+  padding: 3px 35px;
+  border: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    var(--basic-white) 37%,
+    var(--special-yellow-light) 37%,
+    var(--special-yellow-light) 63%,
+    var(--basic-white) 63%
+  );
+  cursor: pointer;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   line-height: 22px;
@@ -1075,20 +1112,9 @@ address::after {
   background-color: var(--input-grey);
 }
 
-.write-us .btn {
-  margin: 0;
-  margin-top: 45px;
-  padding: 0;
-  padding: 3px 35px;
-  border: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    var(--basic-white) 37%,
-    var(--special-yellow-light) 37%,
-    var(--special-yellow-light) 63%,
-    var(--basic-white) 63%
-  );
-  cursor: pointer;
+.write-us-error {  
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 /*====map====*/
@@ -1246,7 +1272,7 @@ header .logout {
   border: none;
 }
 
-.filter::before {
+.filter legend::before {
   position: absolute;
   content: "";
   width: 200px;
@@ -1600,10 +1626,13 @@ footer a:active {
 .write-us .btn:hover,
 .write-us .btn:focus {
   background-color: var(--special-yellow-light);
+  background-image: none;
 }
 
 .btn:active {
   color: var(--basic-black-transp);
+  background-color: var(--special-yellow-light);
+  background-image: none;
 }
 
 .svg-box:hover,
@@ -1619,7 +1648,7 @@ footer a:active {
   opacity: 0.3;
 }
 
-.services-item:active a::before {
+.services-item:active .btn::before {
   content: " ";
   position: absolute;
   z-index: -1;
@@ -1630,7 +1659,7 @@ footer a:active {
   background-color: var(--basic-black);
 }
 
-.services-item a:active {
+.services-item .btn:active {
   position: relative;
   z-index: 1;
   background-image: none;
@@ -1680,8 +1709,10 @@ footer a:active {
   outline: 2px solid var(--special-yellow-light);
 }
 
-.input-error {
+.write-us-form .input-error {
   background-color: var(--error);
+  border: none
+  ;  
 }
 
 .social-item a:hover,
@@ -1890,4 +1921,27 @@ footer a:active {
 
 .toggle-max {
   left: 115px;
+}
+
+/*====animation====*/
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
