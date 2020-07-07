@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style-min.css" rel="stylesheet" />
 </head>
 
 <body class="page-body">
-  <header>
+  <header class="size">
     <a class="logo" href="">
       <svg width="163" height="35">
         <g clip-path="url(#clip0)">
@@ -164,7 +164,7 @@
             </div>
 
           </article>
-        </li>        
+        </li>
       </ul>
       <ul class="promo-sliders">
         <li>
@@ -178,7 +178,7 @@
         </li>
       </ul>
     </section>
-    <section class="best">
+    <section class="best size">
       <h2 class="visually-hidden">Лучшие товары</h2>
       <ul class="best-items">
         <li class="best-item">
@@ -198,7 +198,7 @@
           </a>
         </li>
         <li class="best-item">
-          <a class="svg-box svg-box-down" tabindex="0">
+          <a class="svg-box svg-box-down" href="catalog.html" tabindex="0">
             <svg width="86" height="117">
               <g clip-path="url(#clip0)" fill="#363636">
                 <path
@@ -214,7 +214,7 @@
           </a>
         </li>
         <li class="best-item">
-          <a class="svg-box" tabindex="0">
+          <a class="svg-box" href="blank.html" tabindex="0">
             <svg width="71" height="87">
               <g clip-path="url(#clip0)" fill="#363636">
                 <path
@@ -229,7 +229,7 @@
           </a>
         </li>
         <li class="best-item">
-          <a class="svg-box" tabindex="0">
+          <a class="svg-box" href="blank.html" tabindex="0">
             <svg width="107" height="65">
               <g clip-path="url(#clip0)" fill="#363636">
                 <path
@@ -277,41 +277,44 @@
       </ul>
     </section>
     <section class="services">
-      <h2 class="visually-hidden">Сервис</h2>
-      <ul class="services-items">
-        <li class="services-item">
-          <button class="btn btn-delivery services-active" type="button">Доставка</button>
-        </li>
-        <li class="services-item">
-          <button class="btn btn-guarantee" type="button">Гарантия</button>
-        </li>
-        <li class="services-item">
-          <button class="btn btn-credit" type="button">Кредит</button>
-        </li>
-      </ul>
-      <ul class="services-contents">
-        <li class="services-content">
-          <article class="service-delivery">
-            <h3>Доставка</h3>
-            <p class="delivery-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-              бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </article>
-        </li>
-        <li class="services-content">
-          <article class="service-guarantee none">
-            <h3>Гарантия</h3>
-            <p class="guarantee-content">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-              переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
-          </article>
-        </li>
-        <li class="services-content">
-          <article class="service-credit none">
-            <h3>Кредит</h3>
-            <p class="credit-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </article>
-        </li>
-      </ul>
+      <div class="services-box size">
+        <h2 class="visually-hidden">Сервис</h2>
+        <ul class="services-items">
+          <li class="services-item">
+            <button class="btn btn-delivery services-active" type="button">Доставка</button>
+          </li>
+          <li class="services-item">
+            <button class="btn btn-guarantee" type="button">Гарантия</button>
+          </li>
+          <li class="services-item">
+            <button class="btn btn-credit" type="button">Кредит</button>
+          </li>
+        </ul>
+        <ul class="services-contents">
+          <li class="services-content">
+            <article class="service-delivery">
+              <h3>Доставка</h3>
+              <p class="delivery-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </article>
+          </li>
+          <li class="services-content">
+            <article class="service-guarantee none">
+              <h3>Гарантия</h3>
+              <p class="guarantee-content">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+                переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
+            </article>
+          </li>
+          <li class="services-content">
+            <article class="service-credit none">
+              <h3>Кредит</h3>
+              <p class="credit-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+
     </section>
     <section class="producers">
       <h2 class="visually-hidden">Производители</h2>
@@ -338,7 +341,7 @@
         </li>
       </ul>
     </section>
-    <div class="box-info-contacts">
+    <div class="box-info-contacts size">
       <section class="info">
         <h2>О нас</h2>
         <p class="content info-content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
@@ -364,70 +367,73 @@
     </div>
   </main>
   <footer>
-    <a class="logo" href="blank.html">
-      <svg width="163" height="35">
-        <g clip-path="url(#clip0)">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M-.15.7v33.6h13.53a15.72 15.72 0 0011.72-4.82 16.46 16.46 0 004.71-11.98A16.46 16.46 0 0019.75 1.88 15.72 15.72 0 0013.38.7H-.15zm7.73 26.21V8.09h5.8a8.65 8.65 0 016.5 2.57 9.4 9.4 0 012.5 6.84 9.4 9.4 0 01-2.5 6.84 8.64 8.64 0 01-6.5 2.57h-5.8zm34.8-5.95h12.08v-7.3H42.38V8.09h13.29V.7H34.65v33.6H55.9v-7.39H42.38v-5.95zM78.72 34.3L89.74.7H81.3l-7.5 24.72L66.3.7h-8.45l11.02 33.6h9.85zm14.4 0h7.74V.7h-7.73v33.6zm38.62-1.41a15.5 15.5 0 006.04-5.7l-6.67-3.83a7.48 7.48 0 01-3.16 3.02 9.87 9.87 0 01-4.67 1.1 9.6 9.6 0 01-7.17-2.73 9.91 9.91 0 01-2.69-7.25 9.93 9.93 0 012.69-7.25 9.6 9.6 0 017.17-2.74 9.9 9.9 0 014.64 1.08 7.59 7.59 0 013.2 3.05l6.66-3.84a15.87 15.87 0 00-6.09-5.69 17.42 17.42 0 00-8.4-2.08 17.12 17.12 0 00-17.6 17.47 17.12 17.12 0 0017.59 17.47c2.95.03 5.86-.69 8.46-2.08zm17.88-11.93h12.08v-7.3h-12.08V8.09h13.29V.7h-21.03v33.6h21.27v-7.39h-13.53v-5.95z"
-            fill="#F0C52E" />
-        </g>
-        <defs></defs>
-      </svg>
-    </a>
-    <div class="additional-navigation additional-navigation-footer">
-      <a class="login" href="blank.html">Войти</a>
-      <a class="compare" href="blank.html">Сравнить</a>
-      <a class="cart" href="blank.html">Корзина</a>
-    </div>
-    <address>г. Москва, ул. Строителей, 15</address>
-    <p class="contacts-phone">
-      Тел: <a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
-    </p>
-    <nav class="footer-navigation">
-      <ul class="navigation-items">
-        <li class="navigation-item navigation-delivery">
-          <a href="blank.html">доставка</a>
+    <div class="footer-box size">
+      <a class="logo">
+        <svg width="163" height="35">
+          <g clip-path="url(#clip0)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M-.15.7v33.6h13.53a15.72 15.72 0 0011.72-4.82 16.46 16.46 0 004.71-11.98A16.46 16.46 0 0019.75 1.88 15.72 15.72 0 0013.38.7H-.15zm7.73 26.21V8.09h5.8a8.65 8.65 0 016.5 2.57 9.4 9.4 0 012.5 6.84 9.4 9.4 0 01-2.5 6.84 8.64 8.64 0 01-6.5 2.57h-5.8zm34.8-5.95h12.08v-7.3H42.38V8.09h13.29V.7H34.65v33.6H55.9v-7.39H42.38v-5.95zM78.72 34.3L89.74.7H81.3l-7.5 24.72L66.3.7h-8.45l11.02 33.6h9.85zm14.4 0h7.74V.7h-7.73v33.6zm38.62-1.41a15.5 15.5 0 006.04-5.7l-6.67-3.83a7.48 7.48 0 01-3.16 3.02 9.87 9.87 0 01-4.67 1.1 9.6 9.6 0 01-7.17-2.73 9.91 9.91 0 01-2.69-7.25 9.93 9.93 0 012.69-7.25 9.6 9.6 0 017.17-2.74 9.9 9.9 0 014.64 1.08 7.59 7.59 0 013.2 3.05l6.66-3.84a15.87 15.87 0 00-6.09-5.69 17.42 17.42 0 00-8.4-2.08 17.12 17.12 0 00-17.6 17.47 17.12 17.12 0 0017.59 17.47c2.95.03 5.86-.69 8.46-2.08zm17.88-11.93h12.08v-7.3h-12.08V8.09h13.29V.7h-21.03v33.6h21.27v-7.39h-13.53v-5.95z"
+              fill="#F0C52E" />
+          </g>
+          <defs></defs>
+        </svg>
+      </a>
+      <div class="additional-navigation additional-navigation-footer">
+        <a class="login" href="blank.html">Войти</a>
+        <a class="compare" href="blank.html">Сравнить</a>
+        <a class="cart" href="blank.html">Корзина</a>
+      </div>
+      <address>г. Москва, ул. Строителей, 15</address>
+      <p class="contacts-phone">
+        Тел: <a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+      </p>
+      <nav class="footer-navigation">
+        <ul class="navigation-items">
+          <li class="navigation-item navigation-delivery">
+            <a href="blank.html">доставка</a>
+          </li>
+          <li class="navigation-item navigation-guarantee">
+            <a href="blank.html">гарантия</a>
+          </li>
+          <li class="navigation-item navigation-contacts">
+            <a href="blank.html">контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li class="social-item social-fb">
+          <a href="https://www.facebook.com/">
+            <span class="visually-hidden">Facebook</span>
+            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 16a16 16 0 10-18.5 15.8V20.62H9.44V16h4.06v-3.53c0-4 2.39-6.22 6.04-6.22 1.75 0 3.58.31 3.58.31v3.94h-2.01c-1.99 0-2.61 1.23-2.61 2.5v3h4.44l-.71 4.63H18.5V31.8A16 16 0 0032 16z"
+                fill="#fff" /></svg>
+          </a>
         </li>
-        <li class="navigation-item navigation-guarantee">
-          <a href="blank.html">гарантия</a>
+        <li class="social-item social-ig">
+          <a href="https://www.instagram.com/">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 16a4.9997 4.9997 0 01-5 5 4.9997 4.9997 0 01-5-5c0-.285.03-.5633.0817-.8333H9.3333v6.6616a.838.838 0 00.8384.8384H21.83a.8383.8383 0 00.8367-.8384v-6.6616h-1.7484c.0517.27.0817.5483.0817.8333zm-5 3.3333a3.3336 3.3336 0 003.0799-2.059 3.335 3.335 0 00-.7237-3.6333 3.3332 3.3332 0 00-2.3579-.976A3.3341 3.3341 0 1016 19.3333zM20 12.5h1.9983A.5019.5019 0 0022.5 12v-1.9983a.502.502 0 00-.5017-.5017H20a.5014.5014 0 00-.5017.5017V12c.0017.275.2267.5.5017.5zM16 0a16 16 0 100 31.9999A16 16 0 0016 0zm8.3333 22.4817c0 1.0183-.8333 1.8516-1.8516 1.8516H9.5183c-1.0183 0-1.8516-.8333-1.8516-1.8516V9.5183c0-1.0183.8333-1.8516 1.8516-1.8516h12.9634c1.0183 0 1.8516.8333 1.8516 1.8516v12.9634z"
+                fill="#fff" /></svg>
+          </a>
         </li>
-        <li class="navigation-item navigation-contacts">
-          <a href="blank.html">контакты</a>
+        <li class="social-item social-tw">
+          <a href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 32a15.7 15.7 0 01-6.22-1.27 16.02 16.02 0 01-5.1-3.4 16.02 16.02 0 01-3.41-5.11A15.7 15.7 0 010 16c0-2.17.42-4.24 1.27-6.22a16.02 16.02 0 013.4-5.1 16.02 16.02 0 015.11-3.41A15.7 15.7 0 0116 0c2.17 0 4.24.42 6.22 1.27 1.98.84 3.68 1.97 5.1 3.4a16.02 16.02 0 013.41 5.11A15.7 15.7 0 0132 16c0 2.17-.42 4.24-1.27 6.22a16.02 16.02 0 01-3.4 5.1 16.02 16.02 0 01-5.11 3.41A15.7 15.7 0 0116 32zm9.4-24c-.12.06-.3.18-.56.34l-.6.41-.58.31-.66.22A3.68 3.68 0 0020.16 8c-2.44 0-3.66 1.02-3.66 3.06v1.85c-3.35-.17-5.93-1.4-7.72-3.7A2.52 2.52 0 008 11c0 1.38.51 2.42 1.53 3.13-.12 0-.3 0-.53.03-.23.02-.41.02-.55 0A1.57 1.57 0 018 14c0 .96.26 1.76.77 2.4a3.53 3.53 0 002.1 1.23c-.2.25-.5.37-.87.37-.33 0-.63-.1-.88-.28 0 .81.4 1.44 1.18 1.89.78.45 1.66.68 2.64.7-.38.57-.92.99-1.64 1.27-.72.28-1.49.42-2.3.42-.3 0-.7-.07-1.2-.22l-.8-.22c.33.67 1.02 1.24 2.05 1.72 1.03.48 2.34.72 3.92.72a10.3 10.3 0 007-2.69A13.08 13.08 0 0024 12c0-.04.13-.13.38-.27.25-.13.54-.31.87-.54.33-.23.58-.47.75-.72-1.13 0-1.88.02-2.25.06.73-.44 1.28-1.28 1.66-2.53z"
+                fill="#fff" /></svg>
+          </a>
         </li>
       </ul>
-    </nav>
-    <ul class="social">
-      <li class="social-item social-fb">
-        <a href="https://www.facebook.com/">
-          <span class="visually-hidden">Facebook</span>
-          <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M32 16a16 16 0 10-18.5 15.8V20.62H9.44V16h4.06v-3.53c0-4 2.39-6.22 6.04-6.22 1.75 0 3.58.31 3.58.31v3.94h-2.01c-1.99 0-2.61 1.23-2.61 2.5v3h4.44l-.71 4.63H18.5V31.8A16 16 0 0032 16z"
-              fill="#fff" /></svg>
-        </a>
-      </li>
-      <li class="social-item social-ig">
-        <a href="https://www.instagram.com/">
-          <span class="visually-hidden">Instagram</span>
-          <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M21 16a4.9997 4.9997 0 01-5 5 4.9997 4.9997 0 01-5-5c0-.285.03-.5633.0817-.8333H9.3333v6.6616a.838.838 0 00.8384.8384H21.83a.8383.8383 0 00.8367-.8384v-6.6616h-1.7484c.0517.27.0817.5483.0817.8333zm-5 3.3333a3.3336 3.3336 0 003.0799-2.059 3.335 3.335 0 00-.7237-3.6333 3.3332 3.3332 0 00-2.3579-.976A3.3341 3.3341 0 1016 19.3333zM20 12.5h1.9983A.5019.5019 0 0022.5 12v-1.9983a.502.502 0 00-.5017-.5017H20a.5014.5014 0 00-.5017.5017V12c.0017.275.2267.5.5017.5zM16 0a16 16 0 100 31.9999A16 16 0 0016 0zm8.3333 22.4817c0 1.0183-.8333 1.8516-1.8516 1.8516H9.5183c-1.0183 0-1.8516-.8333-1.8516-1.8516V9.5183c0-1.0183.8333-1.8516 1.8516-1.8516h12.9634c1.0183 0 1.8516.8333 1.8516 1.8516v12.9634z"
-              fill="#fff" /></svg>
-        </a>
-      </li>
-      <li class="social-item social-tw">
-        <a href="https://twitter.com">
-          <span class="visually-hidden">Twitter</span>
-          <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16 32a15.7 15.7 0 01-6.22-1.27 16.02 16.02 0 01-5.1-3.4 16.02 16.02 0 01-3.41-5.11A15.7 15.7 0 010 16c0-2.17.42-4.24 1.27-6.22a16.02 16.02 0 013.4-5.1 16.02 16.02 0 015.11-3.41A15.7 15.7 0 0116 0c2.17 0 4.24.42 6.22 1.27 1.98.84 3.68 1.97 5.1 3.4a16.02 16.02 0 013.41 5.11A15.7 15.7 0 0132 16c0 2.17-.42 4.24-1.27 6.22a16.02 16.02 0 01-3.4 5.1 16.02 16.02 0 01-5.11 3.41A15.7 15.7 0 0116 32zm9.4-24c-.12.06-.3.18-.56.34l-.6.41-.58.31-.66.22A3.68 3.68 0 0020.16 8c-2.44 0-3.66 1.02-3.66 3.06v1.85c-3.35-.17-5.93-1.4-7.72-3.7A2.52 2.52 0 008 11c0 1.38.51 2.42 1.53 3.13-.12 0-.3 0-.53.03-.23.02-.41.02-.55 0A1.57 1.57 0 018 14c0 .96.26 1.76.77 2.4a3.53 3.53 0 002.1 1.23c-.2.25-.5.37-.87.37-.33 0-.63-.1-.88-.28 0 .81.4 1.44 1.18 1.89.78.45 1.66.68 2.64.7-.38.57-.92.99-1.64 1.27-.72.28-1.49.42-2.3.42-.3 0-.7-.07-1.2-.22l-.8-.22c.33.67 1.02 1.24 2.05 1.72 1.03.48 2.34.72 3.92.72a10.3 10.3 0 007-2.69A13.08 13.08 0 0024 12c0-.04.13-.13.38-.27.25-.13.54-.31.87-.54.33-.23.58-.47.75-.72-1.13 0-1.88.02-2.25.06.73-.44 1.28-1.28 1.66-2.53z"
-              fill="#fff" /></svg>
-        </a>
-      </li>
-    </ul>
-    <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-      <span class="visually-hidden">HTML-academy</span>
-    </a>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <span class="visually-hidden">HTML-academy</span>
+      </a>
+    </div>
+
   </footer>
   <div class="write-us none">
     <button type="button" class="close write-us-close" aria-label="Закрыть форму"></button>
@@ -435,8 +441,7 @@
       <div class="name-email-box">
         <label class="label-write" for="name">
           Ваше имя:<br>
-          <input class="input-write" type="text" id="name" aria-label="Впишите ваше име"
-            placeholder="Имя Фамилия">
+          <input class="input-write" type="text" id="name" aria-label="Впишите ваше име" placeholder="Имя Фамилия">
         </label>
         <label class="label-write" for="e-mail">
           Ваш e-mail:<br>
@@ -457,7 +462,7 @@
       tabindex="0">
     </iframe>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>
