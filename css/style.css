@@ -96,13 +96,15 @@ a {
   padding-top: 9px;
   padding-bottom: 9px;
   background-image: linear-gradient(transparent 37%,
-      var(--special-yellow-one) 37%,
-      var(--special-yellow-one) 63%,
-      transparent 63%);
+    var(--special-yellow-one) 37%,
+    var(--special-yellow-one) 63%,
+    transparent 63%);
 }
 
 .size {
   width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -121,7 +123,6 @@ a {
 .page-body {
   min-height: 100%;
   display: grid;
-
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -132,7 +133,7 @@ a {
 
 .header {
   position: relative;
-
+  box-sizing: border-box;
   margin: auto;
   margin-top: 40px;
   margin-bottom: -130px;
@@ -141,7 +142,7 @@ a {
 
 .header .logo {
   position: absolute;
-  margin-left: 60px;
+  margin-left: 40px;
   margin-top: -20px;
 }
 
@@ -266,7 +267,6 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .header .navigation-item {
@@ -302,7 +302,6 @@ a {
   padding-left: 60px;
   list-style: none;
   background-color: var(--special-yellow-light);
-
 }
 
 .vr {
@@ -596,8 +595,7 @@ a {
 
 /*====best====*/
 
-.best {
-  /*  width: 1160px; */
+.best {  
   margin: auto;
   padding-top: 94px;
 }
@@ -653,8 +651,8 @@ a {
 
 .services {
   background-image: linear-gradient(transparent 184px,
-      var(--basic-grey-light) 184px,
-      var(--basic-grey-light) 100%);
+    var(--basic-grey-light) 184px,
+    var(--basic-grey-light) 100%);
 }
 
 .services-box {
@@ -829,6 +827,7 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 20px;
+  overflow: hidden;
   margin: auto;
   padding-top: 108px;
 }
@@ -955,8 +954,6 @@ a {
   color: var(--basic-white-transp-max);
 }
 
-
-
 .additional-navigation-footer a {
   position: relative;
   margin-left: 65px;
@@ -1074,8 +1071,7 @@ a {
   height: 34px;
   margin-top: auto;
   margin-left: auto;
-  margin-right: -3px;
-  /* margin-bottom: 7px; */
+  margin-right: -3px;  
   background-image: url(../img/logo-html.svg);
   background-repeat: no-repeat;
 }
@@ -1155,9 +1151,9 @@ a {
   border: none;
   text-transform: uppercase;
   background-image: linear-gradient(var(--basic-white) 37%,
-      var(--special-yellow-light) 37%,
-      var(--special-yellow-light) 63%,
-      var(--basic-white) 63%);
+    var(--special-yellow-light) 37%,
+    var(--special-yellow-light) 63%,
+    var(--basic-white) 63%);
   cursor: pointer;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -1237,7 +1233,7 @@ a {
   position: relative;
   z-index: 5;
   box-sizing: border-box;
-  /* width: 1160px; */
+  width: 1160px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -1247,8 +1243,8 @@ a {
   line-height: 58px;
   font-weight: 800;
   background-image: linear-gradient(var(--special-yellow-light) 12%,
-      var(--basic-white) 12%,
-      var(--basic-white) 100%);
+    var(--basic-white) 12%,
+    var(--basic-white) 100%);
 }
 
 /*====main-navigation====*/
@@ -1306,16 +1302,17 @@ a {
 
 .search-catalog-box {
   box-sizing: border-box;
-  width: 268px;
+  width: 288px;
   margin-left: auto;
+  padding-left: 20px;
   margin-right: 0;  
 }
 
 .search-catalog {
   grid-area: sc;
   background-image: linear-gradient(var(--back-grey) 70px,
-      var(--basic-grey-light) 70px,
-      var(--basic-grey-light) 100%);
+    var(--basic-grey-light) 70px,
+    var(--basic-grey-light) 100%);
 }
 
 
@@ -1434,9 +1431,9 @@ a {
   padding: 9px 43px 9px 37px;
   border: none;
   background-image: linear-gradient(var(--basic-grey-light) 37%,
-      var(--special-yellow-one) 37%,
-      var(--special-yellow-one) 63%,
-      var(--basic-grey-light) 63%);
+    var(--special-yellow-one) 37%,
+    var(--special-yellow-one) 63%,
+    var(--basic-grey-light) 63%);
 }
 
 /*====sorting-rating====*/
@@ -1447,6 +1444,7 @@ a {
 }
 
 .sorting-rating {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -1457,7 +1455,7 @@ a {
 
 .sorting-rating h2 {
   margin: 0;
-  margin-right: 67px;
+  margin-right: 72px;
   padding: 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -1467,8 +1465,7 @@ a {
   text-transform: uppercase;
 }
 
-.sorting-list {
-  position: relative;
+.sorting-list {  
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -1477,6 +1474,8 @@ a {
 }
 
 .sorting-item button {
+  padding: 0;
+  margin: 0;
   color: var(--basic-black-transp);
   border: none;
   background: none;
@@ -1487,21 +1486,21 @@ a {
 }
 
 .sorting-option {
-  margin-right: 18px;
+  margin-right: 32px;
   font-size: 14px;
   line-height: 19px;
 }
 
 .sorting-down {
   position: absolute;
-  right: -217px;
-  top: -5px;
+  right: 38px;
+  top: 20px;
 }
 
 .sorting-up {
   position: absolute;
-  right: -250px;
-  top: -5px;
+  right: 5px;
+  top: 20px;
 }
 
 .not-active svg {

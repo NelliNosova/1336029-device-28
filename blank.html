@@ -7,8 +7,8 @@
     <link href="css/style-min.css" rel="stylesheet" />
   </head>
   <body class="page-body">
-    <header class="size">
-      <a class="logo" href="">
+    <header class="header size">
+      <a class="logo">
         <svg width="163" height="35">
           <g clip-path="url(#clip0)">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -20,13 +20,9 @@
       </a>
       <div class="user-navigation">
         <form class="search">
-          <button type="submit" aria-label="Поиск">
-            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.67 12a5.3 5.3 0 003.26-1.13l2.93 2.94.94-.95-2.93-2.93A5.34 5.34 0 106.67 12zm0-9.33a4 4 0 11-.01 8 4 4 0 010-8z"
-                fill="#000" /></svg>
-          </button>
-          <input type="text" placeholder="Поиск по сайту">
+          <label class="search-label visually-hidden" for="search-input">Поиск по сайту</label>
+          <input type="text" id="search-input" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>
         </form>
         <div class="additional-navigation">
           <a class="login" href="blank.html">Войти</a>
@@ -60,19 +56,19 @@
             </ul>
           </li>
           <li class="navigation-item navigation-delivery">
-            <a href="blank.html">доставка</a>
+            <a href="blank.html">Доставка</a>
           </li>
           <li class="navigation-item navigation-guarantee">
-            <a href="blank.html">гарантия</a>
+            <a href="blank.html">Гарантия</a>
           </li>
           <li class="navigation-item navigation-contacts">
-            <a href="blank.html">контакты</a>
+            <a href="blank.html">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     
-    <footer class="footer-other">
+    <footer class="footer footer-other">
       <div class="footer-box size">
         <a class="logo">
           <svg width="163" height="35">
@@ -96,13 +92,13 @@
         <nav class="footer-navigation">
           <ul class="navigation-items">
             <li class="navigation-item navigation-delivery">
-              <a href="blank.html">доставка</a>
+              <a href="blank.html">Доставка</a>
             </li>
             <li class="navigation-item navigation-guarantee">
-              <a href="blank.html">гарантия</a>
+              <a href="blank.html">Гарантия</a>
             </li>
             <li class="navigation-item navigation-contacts">
-              <a href="blank.html">контакты</a>
+              <a href="blank.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -113,7 +109,8 @@
               <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M32 16a16 16 0 10-18.5 15.8V20.62H9.44V16h4.06v-3.53c0-4 2.39-6.22 6.04-6.22 1.75 0 3.58.31 3.58.31v3.94h-2.01c-1.99 0-2.61 1.23-2.61 2.5v3h4.44l-.71 4.63H18.5V31.8A16 16 0 0032 16z"
-                  fill="#fff" /></svg>
+                  fill="#fff" />
+              </svg>
             </a>
           </li>
           <li class="social-item social-ig">
@@ -122,7 +119,8 @@
               <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M21 16a4.9997 4.9997 0 01-5 5 4.9997 4.9997 0 01-5-5c0-.285.03-.5633.0817-.8333H9.3333v6.6616a.838.838 0 00.8384.8384H21.83a.8383.8383 0 00.8367-.8384v-6.6616h-1.7484c.0517.27.0817.5483.0817.8333zm-5 3.3333a3.3336 3.3336 0 003.0799-2.059 3.335 3.335 0 00-.7237-3.6333 3.3332 3.3332 0 00-2.3579-.976A3.3341 3.3341 0 1016 19.3333zM20 12.5h1.9983A.5019.5019 0 0022.5 12v-1.9983a.502.502 0 00-.5017-.5017H20a.5014.5014 0 00-.5017.5017V12c.0017.275.2267.5.5017.5zM16 0a16 16 0 100 31.9999A16 16 0 0016 0zm8.3333 22.4817c0 1.0183-.8333 1.8516-1.8516 1.8516H9.5183c-1.0183 0-1.8516-.8333-1.8516-1.8516V9.5183c0-1.0183.8333-1.8516 1.8516-1.8516h12.9634c1.0183 0 1.8516.8333 1.8516 1.8516v12.9634z"
-                  fill="#fff" /></svg>
+                  fill="#fff" />
+              </svg>
             </a>
           </li>
           <li class="social-item social-tw">
@@ -131,7 +129,8 @@
               <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16 32a15.7 15.7 0 01-6.22-1.27 16.02 16.02 0 01-5.1-3.4 16.02 16.02 0 01-3.41-5.11A15.7 15.7 0 010 16c0-2.17.42-4.24 1.27-6.22a16.02 16.02 0 013.4-5.1 16.02 16.02 0 015.11-3.41A15.7 15.7 0 0116 0c2.17 0 4.24.42 6.22 1.27 1.98.84 3.68 1.97 5.1 3.4a16.02 16.02 0 013.41 5.11A15.7 15.7 0 0132 16c0 2.17-.42 4.24-1.27 6.22a16.02 16.02 0 01-3.4 5.1 16.02 16.02 0 01-5.11 3.41A15.7 15.7 0 0116 32zm9.4-24c-.12.06-.3.18-.56.34l-.6.41-.58.31-.66.22A3.68 3.68 0 0020.16 8c-2.44 0-3.66 1.02-3.66 3.06v1.85c-3.35-.17-5.93-1.4-7.72-3.7A2.52 2.52 0 008 11c0 1.38.51 2.42 1.53 3.13-.12 0-.3 0-.53.03-.23.02-.41.02-.55 0A1.57 1.57 0 018 14c0 .96.26 1.76.77 2.4a3.53 3.53 0 002.1 1.23c-.2.25-.5.37-.87.37-.33 0-.63-.1-.88-.28 0 .81.4 1.44 1.18 1.89.78.45 1.66.68 2.64.7-.38.57-.92.99-1.64 1.27-.72.28-1.49.42-2.3.42-.3 0-.7-.07-1.2-.22l-.8-.22c.33.67 1.02 1.24 2.05 1.72 1.03.48 2.34.72 3.92.72a10.3 10.3 0 007-2.69A13.08 13.08 0 0024 12c0-.04.13-.13.38-.27.25-.13.54-.31.87-.54.33-.23.58-.47.75-.72-1.13 0-1.88.02-2.25.06.73-.44 1.28-1.28 1.66-2.53z"
-                  fill="#fff" /></svg>
+                  fill="#fff" />
+              </svg>
             </a>
           </li>
         </ul>
