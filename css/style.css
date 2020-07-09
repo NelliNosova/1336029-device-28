@@ -203,7 +203,7 @@ a {
   left: 60px;
   width: 16px;
   height: 16px;
-  background-image: url(../img/icon_search.svg);
+  background-image: url(../img/icon-search.svg);
 }
 
 .search input::placeholder {
@@ -225,7 +225,7 @@ a {
 
 .header .login::before,
 .header .login-in::before {
-  background-image: url(../img/icon_user.svg);
+  background-image: url(../img/icon-user.svg);
 }
 
 .header .compare {
@@ -234,7 +234,7 @@ a {
 }
 
 .header .compare::before {
-  background-image: url(../img/icon_chart.svg);
+  background-image: url(../img/icon-chart.svg);
 }
 
 .header .basket {
@@ -258,7 +258,7 @@ a {
   width: 10px;
   height: 10px;
   left: -23px;
-  background-image: url(../img/icon_cart.svg);
+  background-image: url(../img/icon-cart.svg);
 }
 
 .navigation-items {
@@ -338,7 +338,7 @@ a {
   width: 22px;
   height: 22px;
   right: -37px;
-  background-image: url(../img/icon_plus.svg);
+  background-image: url(../img/icon-plus.svg);
 }
 
 .navigation-catalog:hover .catalog-items,
@@ -971,7 +971,7 @@ a {
   left: -24px;
   width: 13px;
   height: 14px;
-  background-image: url(../img/icon_user_f.svg);
+  background-image: url(../img/icon-user-f.svg);
 }
 
 .additional-navigation-footer .compare::before {
@@ -981,7 +981,7 @@ a {
   left: -24px;
   width: 14px;
   height: 14px;
-  background-image: url(../img/icon_chart_f.svg);
+  background-image: url(../img/icon-chart-f.svg);
 }
 
 .additional-navigation-footer .cart::before {
@@ -991,7 +991,7 @@ a {
   left: -22px;
   width: 10px;
   height: 10px;
-  background-image: url(../img/icon_cart_f.svg);
+  background-image: url(../img/icon-cart-f.svg);
 }
 
 .footer address {
@@ -1204,7 +1204,7 @@ a {
 }
 
 .map iframe {
-  background-image: url(../img/map_popup.png);
+  background-image: url(../img/map-popup.png);
   background-repeat: no-repeat;
 }
 
@@ -1277,7 +1277,7 @@ a {
   right: -24px;
   width: 10px;
   height: 10px;
-  background-image: url(../img/icon_arrow_nav.svg);
+  background-image: url(../img/icon-arrow-nav.svg);
   background-position: center center;
   background-repeat: no-repeat;
 }
