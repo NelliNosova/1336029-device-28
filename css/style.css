@@ -111,7 +111,7 @@ a {
 
 .size-min {
   width: 832px;
-  margin-right: calc((100vw - 1200px) / 2);
+  margin-right: 0;
 }
 
 /*====Grid====*/
@@ -933,7 +933,7 @@ a {
     "ad fn cp"
     ". soc cr";
   grid-template-columns: 352px 460px 1fr;
-  padding: 42px 0 57px 0;
+  padding: 42px 20px 57px 20px;
   color: var(--basic-white);
 }
 
@@ -1294,17 +1294,17 @@ a {
     "sc sr"
     "sc r"
     "sc p";
-  grid-template-columns: calc(((100vw - 1160px) / 2) + 320px) 1fr;
+  grid-template-columns: auto auto;
   margin-top: 49px;
 }
 
 /*====search-catalog====*/
 
 .search-catalog-box {
-  box-sizing: border-box;
-  width: 288px;
+  
+  width: 268px;
   margin-left: auto;
-  padding-left: 20px;
+  padding-left: 60px;
   margin-right: 0;  
 }
 
@@ -1468,6 +1468,7 @@ a {
 .sorting-list {  
   display: flex;
   flex-wrap: wrap;
+  width: 500px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1719,6 +1720,15 @@ a {
   box-sizing: border-box;
   color: var(--basic-black);
   outline: 2px solid var(--basic-black);
+}
+
+.search:focus-within button:hover {
+  color: var(--basic-white);
+}
+.search:focus-within button:active {
+  opacity: 1;
+  background-color: var(--basic-black);
+  color: var(--basic-white-transp-max);
 }
 
 .header a:hover,
